@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+
+    <script>
+
+        // Función externa
+        function muestraMensaje() {
+            alert('Gracias por pinchar');
+        }
+
+        window.onload = function() {
+            document.getElementById("pinchable").onclick = muestraMensaje;
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <input id="pinchable" type="button" value="Pinchame y verás" />
+
+</body>
+</html>

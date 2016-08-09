@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+
+
+    </script>
+</head>
+<body>
+
+    <h1>Seleccionar elementos HTML</h1>
+
+    <h1>Segunda etiqueta h1</h1>
+
+    <h1>Tercerca etiqueta h1</h1>
+
+
+    <script>
+        var datos = document.getElementsByTagName("h1");
+        alert(datos.length);
+        alert("el contenido 1 es: " + datos[0].innerHTML);
+        alert("el contenido 2 es: " + datos[1].innerHTML);
+        alert("el contenido 3 es: " + datos[2].innerHTML);
+
+        datos[0].innerHTML = "ooooo";
+
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>while - 100 numeros al azar</title>
+
+
+        <script>
+
+            /*
+
+    mostrar 100 numeros al azar entre 0 y 100
+
+    Math.round(Math.random()*100);
+
+    */
+
+            //declarar variables
+            var contador;
+            var numero;
+
+
+
+
+            //procesamiento
+            contador=0;
+
+            // inicio del bucle; condición; expresión incremental
+
+            while(contador<=100){
+
+                numero = Math.round(Math.random()*100);
+
+                document.write(numero);
+                document.write("<br>");
+
+            contador++;
+            }
+
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

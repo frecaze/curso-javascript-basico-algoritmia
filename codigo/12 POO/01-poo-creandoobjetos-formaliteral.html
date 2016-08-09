@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POO - Creando objetos de forma literal</title>
+
+    <script>
+
+        var gato = {
+
+            nombre:"scracth",
+            raza:"chusquito",
+            edad:2,
+            color:"anaranjado",
+
+            //metodo get
+            decirNombre:function(){
+                     alert(this.nombre);
+            },
+
+            //metodo set
+            cambiarNombre:function(nuevoNombre){
+                this.nombre = nuevoNombre;
+            }
+
+        } ;
+
+        document.write("nombre " + gato.nombre);
+        document.write("nombre " + gato["nombre"]);
+
+        gato.decirNombre();
+
+        gato.cambiarNombre("lala");
+        gato.decirNombre();
+
+
+        var gato2= Object.create(gato);
+        gato2.cambiarNombre("minino");
+
+        var gato3= Object.create(gato);
+        gato3.cambiarNombre("gatito");
+
+        gato2.decirNombre();
+        gato3.decirNombre();
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

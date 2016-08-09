@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<script>
+
+
+    function resalta() {
+       var idEnlace = this.id;
+        alert(idEnlace);
+    }
+
+    window.onload = function() {
+        var formulario = document.getElementById("formulario");
+        var camposInput = formulario.getElementsByTagName("input");
+
+        for(var i=0; i<camposInput.length; i++) {
+            if(camposInput[i].type == "text") {
+                camposInput[i].onclick = resalta;
+            }
+        }
+    }
+
+
+</script>
+
+<body>
+
+    <form id="formulario" action="">
+
+        First name:<br>
+        <input id="nombre" type="text" name="nombre">
+        <br>
+        Last name:<br>
+        <input id="apellido" type="text" name="apellido">
+        <br>
+        <br>
+
+        <input id="pinchable" type="button" value="Pinchame y verás" />
+
+    </form>
+
+</body>
+</html>
